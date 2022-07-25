@@ -30,7 +30,7 @@ rconsoleprint("loading...")
 
 while true do
     rconsoleclear()
-    rconsoleprint("Commands:\n- dexv4\n- dexv3\n- remotespy\n- infyield / admin\n - hydroxide\nInput: ")
+    rconsoleprint("Commands:\n- dexv4\n- dexv3\n- remotespy\n- infyield / admin\n- hydroxide\nInput: ")
     local newinput = rconsoleinput()
 
     if tostring(newinput) == "dexv4" then
@@ -44,7 +44,7 @@ while true do
     elseif tostring(newinput) == "admin" or tostring(newinput) == "infyield" then
         Commands:InfiniteYield()
     else
-        rconsoleprint("Invalid input!")
+        rconsoleprint("\nInvalid input!")
         task.wait(2)
     end
     print(newinput)
