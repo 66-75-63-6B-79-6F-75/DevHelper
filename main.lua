@@ -33,7 +33,7 @@ game.Players.LocalPlayer.Chatted:Connect(function(message)
         Commands:SimpleSpy()
     elseif message:lower() == ".infyield" or message:lower() == ".admin" or message:lower() == ".infiniteyield" then
         Commands:InfiniteYield()
-    elseif message:lower() == ".hydroxide" then
+    elseif message:lower() == ".hydroxide" or message:lower() == ".h" then
         Commands:Hydroxide()
     end
 end)
