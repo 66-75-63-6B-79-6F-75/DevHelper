@@ -24,17 +24,28 @@ local Commands = {
     end
 }
 
-game.Players.LocalPlayer.Chatted:Connect(function(message)
-    if message:lower() == ".dexv4" then
+
+
+rconsoleprint("loading...")
+
+while true do
+    rconsoleclear()
+    rconsoleprint("Commands:\n- dexv4\n- dexv3\n- remotespy\n- infyield / admin\n - hydroxide\nInput: ")
+    local newinput = rconsoleinput()
+
+    if tostring(newinput) == "dexv4" then
         Commands:DexV4()
-    elseif message:lower() == ".dexv3" then
+    elseif tostring(newinput) == "dexv3" then
         Commands:DexV3()
-    elseif message:lower() == ".rspy" or message:lower() == ".remotespy" then
+    elseif tostring(newinput) == "rspy" or tostring(newinput) == "remotespy" or tostring(newinput) == "simplespy" then
         Commands:SimpleSpy()
-    elseif message:lower() == ".infyield" or message:lower() == ".admin" or message:lower() == ".infiniteyield" then
-        Commands:InfiniteYield()
-    elseif message:lower() == ".hydroxide" or message:lower() == ".h" then
+    elseif tostring(newinput) == "hydroxide" then
         Commands:Hydroxide()
+    elseif tostring(newinput) == "admin" or tostring(newinput) == "infyield" then
+        Commands:InfiniteYield()
+    else
+        rconsoleprint("Invalid input!")
+        task.wait(2)
     end
-end)
-print("loaded!")
+    print(newinput)
+end
