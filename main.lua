@@ -9,7 +9,7 @@ local Commands = {
         loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))() --// Made by exxtremestuffs / jheinem1 / Kan18
     end,
     InfiniteYield = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() --//
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))() --// Edge / Moon / Zwolf / Toon
     end,
     Hydroxide = function()
         local owner = "Upbolt"
